@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Samply manifest</title>
+<style>
+body {
+ background-color: Gainsboro;
+ color: black;
+}
+
+h1 {
+ text-align: center;
+ font: 34px arial, sans-serif;
+}
+
+h2 {
+ border-style: solid;
+ border-color: blue;
+ background-color: WhiteSmoke;
+ border-width: 2px;
+ text-align: center;
+ margin-left: 28%;
+ margin-right: 28%;
+ font: 20px arial, sans-serif;
+}
+
+p {
+ margin-left: 30%;
+ margin-right: 30%;
+ text-align: center;
+ font: 18px arial, sans-serif;
+}
+
+hr { 
+    width: 50%;
+    height: 2px;
+    margin: 0 auto;
+    color: WhiteSmoke;
+    background: blue;
+}
+
+a:link {
+ color: MediumBlue;
+ text-decoration: none;
+}
+
+a:visited {
+  color: DarkSlateGray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: RoyalBlue;
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+<h1>The Samply manifest</h1>
+<br />
+
+<h2>Who is the Samply community?</h2>
+<p>
+<br />
+The Samply community is a group of software developers and scientists from research institutions at different locations, founded to build software for scientific purposes, networking and federated research.
+As an open source community, it is our goal to provide the developed Samply software from individual projects to all members of the community.
+<br />
+<br />
+Originally established in the German Cancer Consortium, the Samply initiative's open-source licensed software is used by several European scientific projects and research networks.
+<br />
+<br />
+</p>
+
+<h2>Communication and organisation of the community:</h2>
+<p>
+<br />
+All Members of the Samply community are expected to comply with the principles and conventions of the Samply manifest.
+<br />
+<br />
+Every member of the Samply community adheres to the rules of the <a href="https://berlincodeofconduct.org">Berlin Code of Conduct</a>.
+<br />
+<br />
+The Samply community is self-organized and self-commited to divide the workload, to implement the requirements of the software and to solve pull requests.
+<br />
+<br />
+We have an open communication culture. Although we develop and use Samply in a variety of independent research projects, we commit to communicating ideas, problems and changes openly.
+<br />
+<br />
+For discussions, questions, complaints or feature requests you can contact the developers via Samply mailing list (<a href="mailto:discussion@samply.de">register</a>), <a href="https://github.com/samply">Issue Tracker</a> and <a href="https://chat.germanbiobanknode.de/">Samply chat</a>.
+<br />
+<br />
+Our working language for documentation is English. In meetings we will choose our working language based on the preferences of the attendees.
+<br />
+<br />
+Members of the Samply community with long-term activity in developing Samply software may become members of the Samply committee, either by invitation from the current committee or by asking for admission.
+<br />
+<br />
+The members of the Samply committee decide by majority about organisational topics like changes of internal workflows. Modifications to the Samply manifest must be decided unanimously by the committee members.
+<br />
+<br />
+Each Samply component is curated by one or more maintainers. Those who engage intensely in the development and enhancements of a component are predestined to become its maintainer (see <a href="https://wiki.verbis.dkfz.de/pages/viewpage.action?pageId=59933238">list of component maintainers</a>).
+<br />
+<br />
+The Samply committee determines the component maintainers in agreement with potential candidates. Component maintainers become automatically members of the Samply committee.
+<br />
+<br />
+Meetings should take place biannually and every member of the community is invited to participate. In addition, the Samply committee plans web conferences to inform the members about news, changes and the roadmap.
+<br />
+<br />
+The appointment and location of a meeting is organised by the committee. The meeting's agenda will be prepared by all participating members.
+<br />
+<br />
+If you would like to join the Samply community, please register to our Samply mailing list by sending an e-mail to <a href="mailto:register@samply.de">register(at)samply.de</a>. Communication on the mailing list is archived and might be made public.
+<br />
+<br />
+</p>
+
+<h2>Principles and guidelines of software development:</h2>
+<p>
+<br />
+Our source code is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPLv3</a> and is provided "as is" without warranty on our public <a href="https://github.com/samply">GitHub repositories</a>.
+<br />
+<br />
+Every member of the Samply community works to the <a href="https://agilemanifesto.org">principles of agile software development</a>.
+<br />
+<br />
+It is assumed that each member of the Samply community contributes to the processing of requirements and pull requests according to their own abilities and interests.
+<br />
+<br />
+We aim to provide Docker buildfiles for each Samply application, and to publish them at <a href="https://hub.docker.com/u/samply">Docker Hub</a>.
+<br />
+<br />
+We do not have Samply-wide release trains. However, each project employing Samply can maintain 'Samply distributions' to establish their own release trains.
+<br />
+<br />
+Component maintainers are the contact person for the component and allowed to approval pull requests and release new versions. They are responsible to fix detected bugs and keep the component compatible with linked components.
+<br />
+<br />
+The members of the Samply community are self-obligated to adhere to our <a href="#catalog">criteria catalog for pull requests</a>.
+<br />
+<br />
+</p>
+
+<br/><hr/>
+
+<h1 id="catalog">Our criteria catalogue for pull requests:</h1>
+<p>
+<br />
+Make your code as clean as possible according to coding best practices (check out 'Clean Code' by Robert C. Martin for reference).
+<br />
+<br />
+Projects will be version-controlled according to Gitflow. There are two permanent branches, master and develop. Additional to that, temporary branches for features, hotfixes and release can be established.
+<br />
+<br />
+The software versioning uses three-figure version number, follows the <a href="https://semver.org">guidelines of Semantic Versioning 2.0.0</a>.
+<br />
+<br />
+The master branch is the current stable release version. The develop branch is a copy of the latest master branch which contains additional new developed features and changes. Its the base for the next release.
+<br />
+<br />
+Never work in the master branch! Establish a new temporary branch from the current develop branch for development (e.g. feature, hotfix), which will be merged on the develop branch after successful pull request.
+<br />
+<br />
+It is possible to add the appendix 'SNAPSHOT' for versions under development. Avoid dependencies from a SNAPSHOT version, except the concerned version is also a SNAPSHOT. Releases will never depend on SNAPSHOT versions.
+<br />
+<br />
+Pull requests should be addressed by Samply committee members and especially the responsible component maintainers. To solve a pull request the acceptance of a component maintainer is required.
+<br />
+<br />
+Only the component maintainers are allowed to push from develop into the master branch for a new release. New features should be merged from develop into master branch within two weeks.
+<br />
+<br />
+For Java software we support one OpenJDK-version on release. The Samply committee discuss and determine the supported version and potential version-upgrades. 
+<br />
+<br />
+We keep external dependencies as low as possible. External libraries have to be agreed upon by the Samply committee before use.
+<br />
+<br />
+Each modification should be communicated to the component maintainer. Also other involved community members should be informed promptly.
+<br />
+<br />
+Whenever a modification on interfaces is done, we will do a system test.
+<br />
+<br />
+We use a Samply license header for our software. Embedding this header is a requirement for each Samply component.
+<br />
+<br />
+For each release we make sure to keep the compatibility between connected Samply components (for combinations check the releases-tabs or the docker-compose-files of the deployments at <a href="https://github.com/samply">GitHub/Samply</a>). If necessary, we will modify affected Samply components to ensure compatibility.
+<br />
+<br />
+For very good reasons, it is possible to break the rules of this criteria catalogue. Please inform affected community members and the Samply committee about a rule break promptly.
+<br />
+<br />
+</p>
+
+</body>
+</html>
