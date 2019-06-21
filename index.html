@@ -4,54 +4,61 @@
 <title>The Samply manifest</title>
 <style>
 body {
- background-color: Gainsboro;
- color: black;
+ background-color: #f7fbff;
+ color: #23333f;
 }
 
 h1 {
  text-align: center;
  font: 34px arial, sans-serif;
+ border-radius: 20px;
+ background-color: white;
+ margin-left: 26%;
+ margin-right: 26%;
+ padding: 5px;
 }
 
 h2 {
- border-style: solid;
- border-color: blue;
- background-color: WhiteSmoke;
- border-width: 2px;
  text-align: center;
+ font: 20px arial, sans-serif;
+ border-style: solid;
+ border-color: #304556;
+ border-radius: 10px;
+ border-width: 2px;
+ background-color: #60778c;
+ color: white;
  margin-left: 28%;
  margin-right: 28%;
- font: 20px arial, sans-serif;
 }
 
 p {
- margin-left: 30%;
- margin-right: 30%;
  text-align: center;
  font: 18px arial, sans-serif;
+ margin-left: 30%;
+ margin-right: 30%;
 }
 
-hr { 
-    width: 50%;
-    height: 2px;
-    margin: 0 auto;
-    color: WhiteSmoke;
-    background: blue;
+hr {
+ background: blue;
+ color: WhiteSmoke;
+ width: 50%;
+ height: 2px;
+ margin: 0 auto;
 }
 
 a:link {
- color: MediumBlue;
+ color: #1228cc;
  text-decoration: none;
 }
 
 a:visited {
-  color: DarkSlateGray;
-  text-decoration: none;
+ color: #606060;
+ text-decoration: none;
 }
 
 a:hover {
-  color: RoyalBlue;
-  text-decoration: underline;
+ color: #e05500;
+ text-decoration: underline;
 }
 </style>
 </head>
@@ -87,7 +94,7 @@ The Samply community is self-organized and self-commited to divide the workload,
 We have an open communication culture. Although we develop and use Samply in a variety of independent research projects, we commit to communicating ideas, problems and changes openly.
 <br />
 <br />
-For discussions, questions, complaints or feature requests you can contact the developers via Samply mailing list (<a href="mailto:discussion@samply.de">register</a>), <a href="https://github.com/samply">Issue Tracker</a> and <a href="https://chat.germanbiobanknode.de/">Samply chat</a>.
+For discussions, questions, complaints or feature requests you can contact the developers via <a href="mailto:dev@samply.de">Samply mailing list</a>, <a href="https://github.com/samply">Issue Tracker</a> and <a href="https://chat.germanbiobanknode.de/">Samply chat</a>.
 <br />
 <br />
 Our working language for documentation is English. In meetings we will choose our working language based on the preferences of the attendees.
@@ -99,7 +106,7 @@ Members of the Samply community with long-term activity in developing Samply sof
 The members of the Samply committee decide by majority about organisational topics like changes of internal workflows. Modifications to the Samply manifest must be decided unanimously by the committee members.
 <br />
 <br />
-Each Samply component is curated by one or more maintainers. Those who engage intensely in the development and enhancements of a component are predestined to become its maintainer (see <a href="https://wiki.verbis.dkfz.de/pages/viewpage.action?pageId=59933238">list of component maintainers</a>).
+Each Samply component is curated by one or more maintainers. Those who engage intensely in the development and enhancements of a component are predestined to become its maintainer (see <a href="https://github.com/samply/manifest/wiki/List-of-component-maintainers">list of component maintainers</a>).
 <br />
 <br />
 The Samply committee determines the component maintainers in agreement with potential candidates. Component maintainers become automatically members of the Samply committee.
@@ -111,7 +118,7 @@ Meetings should take place biannually and every member of the community is invit
 The appointment and location of a meeting is organised by the committee. The meeting's agenda will be prepared by all participating members.
 <br />
 <br />
-If you would like to join the Samply community, please register to our Samply mailing list by sending an e-mail to <a href="mailto:register@samply.de">register(at)samply.de</a>. Communication on the mailing list is archived and might be made public.
+If you would like to join the Samply community, please register to our Samply mailing list by sending an e-mail to <a href="mailto:join@samply.de">join(at)samply</a>. Communication on the mailing list is archived and might be made public.
 <br />
 <br />
 </p>
@@ -142,7 +149,8 @@ The members of the Samply community are self-obligated to adhere to our <a href=
 <br />
 </p>
 
-<br/><hr/>
+<br />
+<hr />
 
 <h1 id="catalog">Our criteria catalogue for pull requests:</h1>
 <p>
@@ -150,7 +158,7 @@ The members of the Samply community are self-obligated to adhere to our <a href=
 Make your code as clean as possible according to coding best practices (check out 'Clean Code' by Robert C. Martin for reference).
 <br />
 <br />
-Projects will be version-controlled according to Gitflow. There are two permanent branches, master and develop. Additional to that, temporary branches for features, hotfixes and release can be established.
+Projects will be version-controlled according to Gitflow. There are two permanent branches, 'master' and 'develop'. Additional to that, temporary branches for features, hotfixes and release can be established.
 <br />
 <br />
 The software versioning uses three-figure version number, follows the <a href="https://semver.org">guidelines of Semantic Versioning 2.0.0</a>.
@@ -166,6 +174,9 @@ It is possible to add the appendix 'SNAPSHOT' for versions under development. Av
 <br />
 <br />
 Pull requests should be addressed by Samply committee members and especially the responsible component maintainers. To solve a pull request the acceptance of a component maintainer is required.
+<br />
+<br />
+Component maintainers need to be aware that pull requests are of high priority and should be tended to within max. 2 days. Delays in pull request approval might otherwise slow down the entire developement process.
 <br />
 <br />
 Only the component maintainers are allowed to push from develop into the master branch for a new release. New features should be merged from develop into master branch within two weeks.
