@@ -109,7 +109,7 @@ The members of the Samply committee decide by majority about organisational topi
 Each Samply component is curated by one or more maintainers. Those who engage intensely in the development and enhancements of a component are predestined to become its maintainer (see <a href="https://github.com/samply/manifest/wiki/List-of-component-maintainers">list of component maintainers</a>).
 <br />
 <br />
-The Samply committee determines the component maintainers in agreement with potential candidates. Component maintainers become automatically members of the Samply committee.
+The Samply committee determines the component maintainers in agreement with potential candidates. Component maintainers automatically become members of the Samply committee.
 <br />
 <br />
 Meetings should take place biannually and every member of the community is invited to participate. In addition, the Samply committee plans web conferences to inform the members about news, changes and the roadmap.
@@ -118,7 +118,7 @@ Meetings should take place biannually and every member of the community is invit
 The appointment and location of a meeting is organised by the committee. The meeting's agenda will be prepared by all participating members.
 <br />
 <br />
-If you would like to join the Samply community, please register to our Samply mailing list by sending an e-mail to <a href="mailto:join@samply.de">join(at)samply</a>. Communication on the mailing list is archived and might be made public.
+If you would like to join the Samply community, please register to our Samply mailing list by sending an e-mail to <a href="mailto:join@samply.de">join(at)samply.de</a>. You can leave the community the same way. Communication on the mailing list is archived and might be made public.
 <br />
 <br />
 </p>
@@ -158,7 +158,7 @@ The members of the Samply community are self-obligated to adhere to our <a href=
 Make your code as clean as possible according to coding best practices (check out 'Clean Code' by Robert C. Martin for reference).
 <br />
 <br />
-Projects will be version-controlled according to Gitflow. There are two permanent branches, 'master' and 'develop'. Additional to that, temporary branches for features, hotfixes and release can be established.
+Projects will be version-controlled according to <a href="https://nvie.com/posts/a-successful-git-branching-model">Gitflow</a>. There are two permanent branches, 'master' and 'develop'. Additional to that, temporary branches for features, hotfixes and release can be established.
 <br />
 <br />
 The software versioning uses three-figure version number, follows the <a href="https://semver.org">guidelines of Semantic Versioning 2.0.0</a>.
@@ -170,22 +170,22 @@ The master branch is the current stable release version. The develop branch is a
 Never work in the master branch! Establish a new temporary branch from the current develop branch for development (e.g. feature, hotfix), which will be merged on the develop branch after successful pull request.
 <br />
 <br />
-It is possible to add the appendix 'SNAPSHOT' for versions under development. Avoid dependencies from a SNAPSHOT version, except the concerned version is also a SNAPSHOT. Releases will never depend on SNAPSHOT versions.
+It is possible to add the appendix 'SNAPSHOT' for versions under development. Avoid dependencies from a SNAPSHOT version, except the concerned version is also a SNAPSHOT. The develop and master branch must never depend on SNAPSHOT versions.
 <br />
 <br />
 Pull requests should be addressed by Samply committee members and especially the responsible component maintainers. To solve a pull request the acceptance of a component maintainer is required.
 <br />
 <br />
-Component maintainers need to be aware that pull requests are of high priority and should be tended to within max. 2 days. Delays in pull request approval might otherwise slow down the entire developement process.
+Component maintainers need to be aware that pull requests are of high priority and should be tended to within 2 days. Delays in pull request approval might otherwise slow down the entire developement process.
 <br />
 <br />
-Only the component maintainers are allowed to push from develop into the master branch for a new release. New features should be merged from develop into master branch within two weeks.
+Only the component maintainers are allowed to merge branches into develop and to push from develop into the master branch for a new release. New features should be merged from develop into master branch within two weeks.
 <br />
 <br />
 For Java software we support one OpenJDK-version on release. The Samply committee discuss and determine the supported version and potential version-upgrades. 
 <br />
 <br />
-We keep external dependencies as low as possible. External libraries have to be agreed upon by the Samply committee before use.
+We keep external dependencies as low as possible. External libraries have to be suggested to the Samply committee and agreed by the affected component maintainers before use.
 <br />
 <br />
 Each modification should be communicated to the component maintainer. Also other involved community members should be informed promptly.
